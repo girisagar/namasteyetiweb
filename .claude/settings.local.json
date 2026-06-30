@@ -1,0 +1,28 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 -m http.server 8765 --bind 0.0.0.0)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:8765/index.html)",
+      "Bash(node -c script.js)",
+      "Bash(curl -s -o /dev/null -w \"server %{http_code}\\\\n\" http://localhost:8765/index.html)",
+      "Bash(curl -s -o /dev/null -w \"loremflickr: %{http_code} \\(final: %{url_effective}\\)\\\\n\" -L \"https://loremflickr.com/640/640/momo,dumplings?lock=11\")",
+      "Bash(curl -s -o /dev/null -w \"server: %{http_code}\\\\n\" http://localhost:8765/index.html)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:3000/)",
+      "Bash(npx next *)",
+      "Bash(curl -s -o /dev/null -w \"nyeti.mp4 via dev server: %{http_code}  size=%{size_download}\\\\n\" http://localhost:3007/videos/nyeti.mp4)",
+      "Bash(curl -s -o /dev/null -w \"page: %{http_code}\\\\n\" http://localhost:3007/)",
+      "Bash(curl -s http://localhost:3007/)",
+      "Bash(command -v ffprobe)",
+      "Bash(ffprobe -v error -select_streams v:0 -show_entries stream=width,height,display_aspect_ratio,duration -of default=noprint_wrappers=1 nyeti.mp4)",
+      "Bash(command -v mediainfo)",
+      "Bash(mediainfo --Inform=\"Video;%Width%x%Height% AR=%DisplayAspectRatio%\" nyeti.mp4)",
+      "Bash(ls -la \"/mnt/c/Users/giris/Downloads/dishes/\" 2>&1 | head -40)",
+      "Read(//mnt/c/Users/giris/Downloads/dishes/**)",
+      "Bash(cp \"/mnt/c/Users/giris/Downloads/dishes/\"*.png public/images/)",
+      "Bash(curl -s -o /dev/null -w \"steamed-momo.png: %{http_code}\\\\n\" http://localhost:3007/images/steamed-momo.png)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:3007/images/catering-platter.png)",
+      "Bash(python3 -)",
+      "Bash(curl -s -o /dev/null -w \"served: %{http_code}\\\\n\" http://localhost:3007/images/food-fallback.png)"
+    ]
+  }
+}
