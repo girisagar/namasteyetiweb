@@ -8,8 +8,15 @@ export default function Story() {
           <span className="eyebrow">Our Story</span>
           <h2 className="section__title">Inspired by Nepal. Loved Like Indian Comfort Food.</h2>
           <p className="section__lead">
-            Namaste Yeti brings together Nepali hospitality and Indian spices through momo,
-            curries, naan, chowmein, thukpa, and vegetarian comfort food.
+
+Our story begins in Nepal, in the shadow of the Himalayas, where food was always a way to welcome people.
+<br></br>
+<br></br>
+Inspired by memories of a small family restaurant serving local Nepali food to travelers from around the world, Namaste Yeti was created to share that same warmth here in our community.
+<br></br>
+<br></br>
+Today, we bring together Nepali hospitality, Himalayan comfort food, and bold Indian flavors through momo, curries, naan, chowmein, thukpa, and vegetarian favorites.
+<br></br>
           </p>
           <div className="story__stats">
             <div>
